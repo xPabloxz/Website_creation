@@ -1,0 +1,20 @@
+align-items: alinha os itens e o texto dentro do background no centro, só funciona com o display:flex ativo.
+align-content: só funciona com o display:flex ativo.
+align-self: alinha o background para o centro dele mesmo, só funciona com o display:flex ativo.
+background: Coloca as propriedades do background no mesmo lugar.
+background-color: Coloca a cor do background.
+color: atribui uma cor ao conteúdo.
+display: flex.
+font-size: aumenta o tamanho da fonte.
+float: diz a posição na tela, direita ou esquerda.
+flex: flex:1 - grow = 1, shrink = 1, basis = 0; flex:2 - grow = 2, shrink = 1, basis = 0.
+flex-direction: Define a direção em coluna ou na horizontal, só funciona com o display:flex ativo.
+flex-wrap: Só funciona no container e só funciona com o display flex ativo e só funciona na horizontal no flex-direction:row.
+flex-flow: Só funciona no container e só funciona com o display flex ativo e só funciona na horizontal no flex-direction:row.
+flex-grow: Só funciona no container e só funciona com o display flex ativo e só funciona na horizontal no flex-direction:row.
+flex-basis: Só funciona no container e só funciona com o display flex ativo e só funciona na horizontal no flex-direction:row.
+flex-shrink: Só funciona no container e só funciona com o display flex ativo e só funciona na horizontal no flex-direction:row.
+justify-content: só funciona com o display:flex ativo.
+line-height: Deixa a forma do elemento mais grossa.
+order: Coloca em ordem os elementos.
+text-align: Alinha o texto dentro de um background.
