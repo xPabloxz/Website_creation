@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <META charset="UTF-8">
+        <TITLE>EXERC1 - Criando Formulário</TITLE>
+    </HEAD>
+    <BODY>
+        <H1><FONT COLOR="#0080FF">Formulário para cadastro</FONT></H1>
+        <FORM NAME="Form1" ACTION = "mailto:pablodbandeira@hotmail.com" METHOD = "post">
+            <TABLE WIDTH = "20%" BORDER="0" CELLSPACING = "5" >
+                <TR>
+                <TD>Nome</TD> 
+                <TD><INPUT TYPE = text NAME = "nome" SIZE ="20" MAXLENGTH = "50"></TD>
+                </TR>
+                <TR>
+                    <TD>E-mail</TD>
+                    <TD><INPUT TYPE = text NAME = "email"></TD>
+                </TR>
+                <TR>
+                    <TD>Sexo</TD>
+                    <TD><INPUT TYPE = radio NAME = "sexo">Feminino 
+                        <INPUT TYPE = radio NAME = "sexo">Masculino</TD>
+                </TR>
+                <TR>
+                    <TD>RG</TD> 
+                    <TD><INPUT TYPE = text NAME = "rg"></TD>
+                </TR>
+                <TR>
+                    <TD>CPF</TD> 
+                    <TD><INPUT TYPE = text NAME = "cpf"></TD>
+                </TR>
+                <TR>
+                    <TD>Login</TD> 
+                    <TD><INPUT TYPE = text NAME = "login"></TD>
+                </TR>
+                <TR>
+                    <TD>Senha</TD> 
+                    <TD><INPUT TYPE = password NAME = "pswd"></TD>
+                </TR>
+                <TR>
+                    <TD COLSPAN = "2">Indique alguns horários que seriam bons:</TD>
+                </TR>
+                <TR>
+                    <TD><INPUT TYPE= checkbox NAME = "t1">08hr às 09hrs</TD>
+                    <TD><INPUT TYPE= checkbox NAME = "t2">09hr às 10hrs</TD>
+                </TR>
+                <TR>
+                    <TD><INPUT TYPE= checkbox NAME = "t3">10hr às 11hrs</TD>
+                    <TD><INPUT TYPE= checkbox NAME = "t4">11hr às 12hrs</TD>
+                </TR>
+                <TR>
+                    <TD COLSPAN="2">Nos conte dois Paises que gostaria de visitar</TD>
+                </TR>
+                <TR>
+                    <TD><SELECT NAME="país1">
+                            <OPTION>ESPANHA</OPTION>
+                            <OPTION>PORTUGAL</OPTION>
+                            <OPTION>REINO UNIDO</OPTION>
+                            <OPTION>RUSSIA</OPTION>
+                    </SELECT></TD>
+                    <TD><SELECT NAME="país2" SIZE="4">
+                            <OPTION>ESPANHA</OPTION>
+                            <OPTION>PORTUGAL</OPTION>
+                            <OPTION>REINO UNIDO</OPTION>
+                            <OPTION>RUSSIA</OPTION>
+                    </TD>
+                </TR>
+                <TR>
+                    <TD COLSPAN="2" ALIGN = center>Quer relatar algo?(opcional)<TEXTAREA NAME="Sug" ROWS="10" COLS="40"></TEXTAREA></TD>
+                </TR>
+                <TR>
+                    <TD><INPUT TYPE = submit VALUE="Enviar"></TD> 
+                    <TD ALIGN="RIGHT"><INPUT TYPE = reset VALUE = "Limpar"></TD>
+                </TR>
+            </TABLE>
+        </FORM>
+    </BODY>
+</HTML>
