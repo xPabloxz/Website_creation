@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Code - Contato</title>
+  <link rel="stylesheet" type="text/css" href="css/folhadeestilo.css">
+</head>
+<body class="color-page">
+  <div class="container-principal" id="topo">
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="logo site">
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="clientes.html">Clientes</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="#topo">Contatos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="img-titulo">
+      <img src="img/contato.png" alt="imagem de contato">
+    </div>
+
+    <section id="txt-contato">
+      <form name="meu_form" id="meu_form" action="">
+        <p class="nome">
+          <label for="nome">Nome:<br>
+          <input type=text id="nomeid" placeholder="Ex: Fulano da Silva" required="required" name="nome"></label><br>
+        </p>
+        <p class="fone">
+          <label for="fone">Fone:<br>
+          <input type=text id="foneid" placeholder="(xx)xxxx-xxxx" name="fone"></label><br>
+        </p>
+        <p>
+          <label for="email">Email:<br>
+          <input type=text id="emailid" placeholder="fulano@gmail.com" required="required" name="email"></label>
+        </p>
+        <p>
+          <textarea placeholder="mensagem" required="required"></textarea>
+          <button type="submit" form="meu_form">Enviar</button>
+        </p>
+      </form>
+
+      <div id="conta-data">
+        <h4>Code - Desenvolvimento de sites</h4>
+        <h5><img src="img/icoadress.png" alt="endereço"><br>Avenida Novos Conhecimentos nº 2016</h5>
+        <h5><img src="img/icoTelefone.png" alt="telefone"><br>+ 55 11 9999-9999</h5>
+        <h5><img src="img/icoContato.jpg" alt="email"><br>contato@code.com.br</h5>
+        <h5><img src="img/icoface.png" alt="facebook"><br>facebook.com/codedev</h5>
+        <h5><img src="img/icoinsta.png" alt="instagram"><br>@codedev</h5>
+      </div>
+
+    </section>
+
+
+  </div>
+</body>
+</html>
