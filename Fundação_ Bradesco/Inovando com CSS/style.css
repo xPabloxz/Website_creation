@@ -1,0 +1,69 @@
+/*Repeat good options: repeat-x, repeat-y and no-repeat*/
+*
+{
+  margin: 0;
+  padding:0;
+}
+
+body
+{
+  background-image: url('img/icoContato.jpg'),url('img/icoContato.jpg'),url('img/icoContato.jpg');
+  background-repeat: repeat-x,repeat-y,repeat-y;
+  background-position: top,left,right;
+  background-attachment:scroll;
+}
+
+p
+{
+  font-size: medium;
+  font-family: 'arial';
+  position: relative;
+  height: 800px;
+  max-width: 600px;
+  margin-left: 28%;
+  margin-top:30%;
+  border:2px solid black;
+  background-color: lightgray;
+  text-align: justify;
+}
+
+
+/*Deve-se respeitar essa ordem para os links.*/
+
+header a:link
+{
+  color: black;
+}
+
+header a:visited
+{
+  color:gray;
+}
+
+header a:hover
+{
+  color: red;
+}
+
+header a:active
+{
+  color: yellow;
+}
+
+
+
+
+
+a
+{
+  font-size: 1.5rem;
+  height: 90px;
+  width: 150px;
+  text-align: center;
+  position: absolute;
+  left:50%;
+  top:50%;
+  margin-left:-75px;
+  margin-top:-45px;
+  text-decoration: none;
+}

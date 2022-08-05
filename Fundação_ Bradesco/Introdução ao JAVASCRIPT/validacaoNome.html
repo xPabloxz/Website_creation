@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+
+    <!--Tipo submit no formulário manda a informação e recarrega a página. Por isso se fez necessário usar o type="button"-->
+
+    <form name="Form1" method="post">
+      Coloque aqui o primeiro nome: <input type="text" name="f_nome" placeholder="digite o nome pablo"><br>
+      <input type="button" name="btn_conferir" value="Conferir" onclick="Validacao()">
+      <input type="reset" name="btn_reset" value="Limpar">
+      <p></p>
+      Resposta: <input type="text" name="f_val">
+    </form>
+
+    <script lang="javascript">
+      <!-- 
+
+        function Validacao() 
+        {
+          var js_val = document.Form1.f_nome.value;
+
+          if(js_val.toUpperCase() == 'PABLO')
+          {
+            document.Form1.f_val.value = 'Resposta correta';
+          }
+          else
+          {
+            document.Form1.f_val.value = 'Resposta errada';
+          }    
+        }
+      
+
+      
+
+      //-->
+    </script>
+  
+  </body>
+</html>

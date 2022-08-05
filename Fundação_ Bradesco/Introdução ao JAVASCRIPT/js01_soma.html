@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Somatório com entrada por formulário e por alerta utilizando parseInt() e toString()</title>
+</head>
+
+<body>
+  <h3>Somatório de dois números inteiros</h3>
+
+  <form action="" method="post" name="FormSoma">
+    Qual o primeiro valor? <input name="f_n1" type="text"><br>
+    Qual o segundo valor? <input name="f_n2" type="text"><br>
+    <input type="button" name="btn_soma" onclick="soma()" value="Somar">
+    <input type="reset" name="btn_cancela" value="Cancelar">
+  </form>
+
+  <script lang="javascript">
+    <!--
+
+      var js_n1;
+      var js_n2;
+      var js_n3;
+      var js_n4;
+      var js_soma;
+      var js_soma2;
+
+      /*Primeira forma de soma*/
+
+      js_n1 = window.prompt('Qual o primeiro valor?','Digite o primeiro valor');
+      
+      js_n2 = window.prompt('Qual o segundo valor?','Digite o segundo valor');
+      
+      js_soma = parseInt(js_n1) + parseInt(js_n2);
+
+      window.alert('O resultado é = '+ js_soma);
+
+      /*Segunda forma de soma*/
+
+      function soma()
+      {
+        js_n3 = parseInt(document.FormSoma.f_n1.value);
+        js_n4 = parseInt(document.FormSoma.f_n2.value);
+        js_soma2 = js_n3 + js_n4;
+
+        document.write('O resultado é = ' + js_soma2.toString());
+      }
+    //-->
+  </script>
+</body>
+</html>

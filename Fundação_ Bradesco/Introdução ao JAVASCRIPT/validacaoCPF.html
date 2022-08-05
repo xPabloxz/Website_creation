@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <!--  Pode usar dois tipos de eventos onsubmit ou onblur, 
+        o lado negativo do onblur é que não precisa apertar 
+        o submit para ele entrar em ação, 
+        é só clicar no campo e sair dele que já funciona.-->
+
+    <!--Validação no campo-->
+    <!-- <form name="Formulario">
+    Digite o número do seu CPF: <input name="cpf" type="text" onblur = "ValidacaoCPF(this)" placeholder="xxx.xxx.xxx-xx"><br>
+    <input type="submit" name="btn_enviar" value="Testar CPF">
+    <input type="reset" name="btn_limpar" value="Limpar">
+    </form> -->
+ 
+  <!--Validação no formulário-->
+  <form name="Formulario" onsubmit="return ValidacaoCPF(this)">
+    Digite o número do seu CPF: <input name="CPF" type="text" placeholder="xxx.xxx.xxx-xx"><br>
+    <input type="submit" name="btn_enviar" value="Testar CPF">
+    <input type="reset" name="btn_limpar" value="Limpar">
+  </form>
+  
+
+  <script lang="javascript">
+    <!--
+
+      // Validação no campo
+      // function ValidacaoCPF(cpf)
+      // {
+      //     var CPF = cpf.value;
+      //     var posicao, i, soma, dv,dv_informado;
+      //     var digito = new Array(10);
+
+      // Validação no formulário
+          function ValidacaoCPF(formulario)
+      {
+          var CPF = formulario.CPF.value;
+          var posicao, i, soma, dv,dv_informado;
+          var digito = new Array(10);
+
+          if(CPF == '')
+          {
+            alert('Este Campo é de preenchimento obrigatório.');
+          }
+          
+          dv_informado = CPF.substr(9,2);
+
+          for(i=0; i<=8; i++)
+          {
+            digito[i] = CPF.substr(i,1);
+          }
+
+          posicao = 10;
+          soma = 0;
+
+          for (i= 0; i <= 8; i++) 
+          {
+            soma += digito[i]*posicao;
+            posicao -= 1;
+            
+          }
+
+          digito[9] = soma % 11;
+
+          if(digito[9] < 2)
+          {
+            digito[9] = 0;
+          }
+          else
+          {
+            digito[9] = 11- digito[9];
+          }
+
+          posicao = 11;
+          soma = 0;
+
+          for(i = 0;i <= 9;i++)
+          {
+            soma += digito[i] * posicao;
+            posicao -= 1;
+          }
+
+          digito[10] = soma % 11;
+
+          if(digito[10] < 2)
+          {
+            digito[10] = 0
+          }
+          else
+          {
+            digito[10] = 11 - digito[10];
+          }
+
+          dv = digito[9]*10 + digito[10];
+
+          if(dv == '')
+          {
+            alert('Você precisa digitar algum número!')
+            return false;
+          }
+          else if(dv == dv_informado)
+          {
+            alert('CPF válido!')
+            return true; 
+          }
+          else
+          {
+            alert('CPF inválido');
+            formulario.CPF.value = '';
+            formulario.CPF.focus();
+            return false;
+          }
+      }
+    //-->
+  </script>
+</body>
+</html>
