@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    thead,td
+    {
+      border-bottom: 1px solid black;
+    }
+
+    /*Ficará em negrito o primeiro p após o hr.*/
+    hr+p
+    {
+      font-weight: bold;
+    }
+
+    a[href*="mailto"]
+    {
+      color:green;
+    }
+
+  </style>
+  <title>Table html</title>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <td><b>Estado(Sudeste)</b></td>
+        <td><b>Sigla</b></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> Minas gerais</td>
+        <td>MG</td>
+      </tr>
+      <tr>
+        <td> São Paulo</td>
+        <td>SP</td>
+      </tr>
+      <tr>
+        <td> Rio de Janeiro</td>
+        <td>RJ</td>
+      </tr>
+      <tr>
+        <td> Espírito Santo</td>
+        <td>ES</td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+  <hr>
+  <p>Olá</p>
+  <p>tudo bem?</p>
+
+  <hr>
+
+  <p>Nome:
+    <a href="http://www.site.com.br">Pablo</a>
+  </p>
+
+  <p>Contato:
+    <a href="mailto:jose@site.com.br">pablo@site.com.br</a>
+  </p>
+
+</body>
+</html>
